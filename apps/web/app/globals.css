@@ -1,0 +1,99 @@
+:root {
+  --background: #ffffff;
+  --foreground: #272626;
+  --primary: #d9dadc;
+  --secondary: #6c757d;
+  --ternary: #343a40;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #61666b;
+    --secondary: #6c757d;
+    --ternary: #343a40;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.primary {
+  color: var(--primary);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.primary:hover {
+  color: #646668; 
+}
+
+.primary:active {
+  color: #414244; 
+}
+
+.secondary {
+  color: var(--secondary);
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.secondary:hover {
+  color: #5a6268; 
+}
+
+.secondary:active {
+  color: #4e555b;
+}
+
+.ternary {
+  color: var(--ternary);
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.ternary:hover {
+  color: #212529;
+}
+
+.ternary:active {
+  color: #1d2124;
+}
+
+.imgDark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  .imgLight {
+    display: none;
+  }
+  .imgDark {
+    display: unset;
+  }
+}

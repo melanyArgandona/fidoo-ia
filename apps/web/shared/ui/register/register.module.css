@@ -1,0 +1,54 @@
+.container {
+    background-color: rgb(242, 239, 239);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+
+  @media (prefers-color-scheme: dark) {
+    .container {
+      background-color: rgb(27, 27, 27);
+    }
+  }
+
+  .line {
+    width: 100%;
+    border-top: 2px solid var(--primary);
+  }
+  
+  .create {
+    display: inline-block;
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .create:hover {
+    color: var(--secondary); 
+  }
+  
